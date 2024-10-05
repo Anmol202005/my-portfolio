@@ -172,9 +172,10 @@ body{
     text-align: center;
 }
 .projects{
+    display: block;
     padding-top: 10vh;
     position:absolute;
-    top: 210vh;
+    top: 215vh;
     width: 100%;
     color: #fff;
     background-color: black;
@@ -247,7 +248,7 @@ body{
 .contact{
     padding-top: 10vh;
     position:absolute;
-    top: 310vh;
+    top: 315vh;
     width: 100%;
     color: #fff;
     background-color: rgb(153,69,102);
@@ -282,4 +283,72 @@ body{
     width:40vw;
     resize: none;
     
+}
+html {
+    scroll-behavior: smooth; 
+}
+.navbar {
+   
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color:transparent; 
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10; 
+}
+.logo {
+    color: #fff; 
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    margin-left: auto; 
+}
+
+.nav-links li {
+    margin-left: 20px; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: #fff; 
+    padding: 8px 16px; 
+    transition: background-color 0.3s; 
+}
+
+.nav-links a:hover {
+    background-color: #555; 
+    border-radius: 4px; 
+}
+
+.toggle-button {
+    display: none; 
+    background: none;
+    border: none;
+    color: #fff; 
+    font-size: 24px; 
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; 
+        display: none; 
+        position: absolute;
+        top: 60px; 
+        background-color: #333; 
+        width: 100%; 
+    }
+
+    .navbar.active .nav-links {
+        display: flex; 
+    }
+
+    .toggle-button {
+        display: block; 
+    }
 }

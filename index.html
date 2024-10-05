@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <nav class="navbar">
+        <div class="logo">ANMOL</div>
+        <button class="toggle-button">☰</button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header" id="Home">
         <div class="header-container">
         <h1 class="heading">
             <span class="primary-head">Anmol Sharma</span><br>
@@ -20,19 +31,19 @@
       <img src="back5.png" class="b5">
     </div>
     <main>
-       <div class="skill"> 
+       <div class="skill" id="about"> 
         <p class="skill-head">ABOUT ME</p>
         <p class="skill-body">Hello! I'm <span class="name">Anmol Sharma</span>,<br> an aspiring developer and current B.Tech student specializing in AIML at AKGEC, Ghaziabad. With a strong foundation in HTML, CSS, and JavaScript, I enjoy creating engaging and interactive web experiences.
 
             As a passionate advocate for learning and growth, I strive to expand my skill set in web development and design.
             Beyond coding, I am proud to be a state-level Abacus champion, which has honed my analytical and problem-solving skills.
-            I have a deep love for music and play the guitar.<br><br><br><br>
+            I have a deep love for music and I love playing guitar.<br><br><br><br>
             <p class="skill-bar"> Proefficient in Front-end development using <span class="autogen"></span></p></p>
             
             <img src="photo.png" alt="JUST ME!" class="me">
 
        </div>
-       <section class="projects">
+       <section class="projects" id="projects">
         <div><p class="p-head">MY WORK</p></div>
         <div class="flashcard">
             
@@ -57,7 +68,7 @@
 
         </div>
        </section>
-       <section class="contact">
+       <section class="contact" id="contact">
         <div class="con-body"><p class="p-head">CONTACT</p>
             <p class="c-body">If you'd like to get in touch with me, feel free to use the contact information below:</p>
             <p class="info">Email : anmol23164016@akgec.ac.in<br>
