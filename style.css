@@ -66,7 +66,7 @@ body{
     overflow: hidden;
 }
 .header-container{
-    position: fixed;
+    position: fixed; 
     top: 20vh;
     left: 50%;
     transform: translateX(-50%);
@@ -176,7 +176,8 @@ body{
     top: 210vh;
     width: 100%;
     color: #fff;
-    background-image:linear-gradient(to bottom,rgb(0,0,0,0.8),rgb(236,162,177,0.8)), url(back2.png);
+    background-color: black;
+    background-image: url(back3.png);
     background-size: cover;
 
 }
@@ -199,7 +200,7 @@ body{
     border-color:rgb(138, 43, 226) ;
     border-style: solid;
     background:linear-gradient(to bottom , rgb(138, 43, 226),rgb(149,93,104));
-    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .flashcard{
     display: flex;
@@ -213,14 +214,49 @@ body{
 .f-img{
     width: 15vw;
     height: 15vw;
+    border-radius: 2vw;
+    border-style: none;
 }
 .button{
     padding: 1vw;
     width:max-content;
     height:max-content;
     background-color:blueviolet;
-    border-style: solid;
-    border-color: black;
+    border-style: none;
+    border-color: rgb(51, 34, 151);
     border-radius: 2vw;
     cursor: pointer;
+}
+.f-head{
+    text-align: center;
+    font-size: 1.5vw;
+}
+.flash:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.contact{
+    padding-top: 10vh;
+    position:absolute;
+    top: 310vh;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(153,69,102);
+}
+.c-body{
+    text-align: center;
+    padding-top: 1vw;
+    font-size: 1.5vw;
+}
+.info{
+    padding-top: 1vw;
+    text-align: center;
+
+}
+.git-img{
+    width: 3vw;
+    height: 3vw;
+}
+.links{
+    text-align: center;
 }
