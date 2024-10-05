@@ -110,7 +110,7 @@ body{
     width: 46.15vw;
     color: beige;
     
-    font-size: 1.8vw;
+    font-size: 2vw;
     cursor: pointer;
 }
 .skill-body:hover{
@@ -365,4 +365,5 @@ html {
 a{
     text-decoration: none;
     color: #fff;
+    font-size: 1vw;
 }
