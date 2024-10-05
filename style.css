@@ -177,7 +177,7 @@ body{
     width: 100%;
     color: #fff;
     background-color: black;
-    background-image: url(back3.png);
+    /* background-image: url(back3.png); */
     background-size: cover;
 
 }
@@ -196,10 +196,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 25px;
     border-color:rgb(138, 43, 226) ;
     border-style: solid;
     background:linear-gradient(to bottom , rgb(138, 43, 226),rgb(149,93,104));
+    box-shadow: 10px 10px 20px rgb(138, 43, 226) ;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .flashcard{
@@ -226,6 +227,7 @@ body{
     border-color: rgb(51, 34, 151);
     border-radius: 2vw;
     cursor: pointer;
+    font-size: 2vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .button:hover{
@@ -247,7 +249,9 @@ body{
     padding-top: 10vh;
     width: 100%;
     color: #fff;
-    background-color: rgb(153,69,102);
+    background-image:linear-gradient(to bottom,black,transparent),url(back0.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-bottom: 5vw;
 }
 .c-body{
@@ -365,5 +369,40 @@ html {
 a{
     text-decoration: none;
     color: #fff;
-    font-size: 2vw;
+    
+}
+@media (max-width: 600px){
+    .b0,.b1,.b2,.b3,.b4,.b5{
+        height: 70vh;
+    }
+    .main{
+        top:70vh ;
+    }
+    .flashcard{
+        flex-direction: column;
+        gap: 10vw;
+    }
+    .p-head,.skill-head{
+        font-size: 7vw;
+    }
+    .primary-head{
+        font-size: 10vw;
+    }
+    .secondary-head{
+        font-size: 4vw;
+    }
+    .f-head{
+        font-size: 3vw;
+    }
+    .f-img{
+        height:50vw ;
+        width: 40vw;
+    }
+    .flash{
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    .button{
+        font-size: 5vw;
+    }
 }
