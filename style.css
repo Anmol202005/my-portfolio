@@ -212,8 +212,8 @@ body{
     
 }
 .f-img{
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 12vw;
     border-radius: 2vw;
     border-style: none;
 }
@@ -237,7 +237,7 @@ body{
 }
 .f-head{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
 .flash:hover{
     transform: scale(1.1);
@@ -361,4 +361,8 @@ html {
     justify-content: center;
     align-items: center;
     gap: 8vw;
+}
+a{
+    text-decoration: none;
+    color: #fff;
 }
