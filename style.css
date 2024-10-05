@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0%;
+    font-family: sans-serif;
 }
 body{
     background-color: black;
@@ -226,6 +227,14 @@ body{
     border-color: rgb(51, 34, 151);
     border-radius: 2vw;
     cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.button:active{
+    transform: scale(1);
 }
 .f-head{
     text-align: center;
@@ -242,6 +251,7 @@ body{
     width: 100%;
     color: #fff;
     background-color: rgb(153,69,102);
+    padding-bottom: 5vw;
 }
 .c-body{
     text-align: center;
@@ -251,6 +261,7 @@ body{
 .info{
     padding-top: 1vw;
     text-align: center;
+    
 
 }
 .git-img{
@@ -259,4 +270,16 @@ body{
 }
 .links{
     text-align: center;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.msg{
+    height: 30vh;
+    width:40vw;
+    resize: none;
+    
 }
