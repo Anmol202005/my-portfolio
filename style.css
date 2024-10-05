@@ -197,7 +197,7 @@ body{
     align-items: center;
     flex-direction: column;
     border-radius: 25px;
-    border-color:rgb(138, 43, 226) ;
+    border-color:rgb(74, 55, 179) ;
     border-style: solid;
     background:linear-gradient(to bottom , rgb(138, 43, 226),rgb(149,93,104));
     box-shadow: 10px 10px 20px rgb(138, 43, 226) ;
@@ -222,12 +222,13 @@ body{
     padding: 1vw;
     width:max-content;
     height:max-content;
-    background-color:blueviolet;
-    border-style: none;
+    background-color:rgb(74, 55, 179);
+    border-style: solid;
     border-color: rgb(51, 34, 151);
     border-radius: 2vw;
     cursor: pointer;
     font-size: 2vw;
+    font-weight: 600;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .button:hover{
@@ -239,6 +240,7 @@ body{
 }
 .f-head{
     text-align: center;
+    font-weight: 800;
     font-size: 1vw;
 }
 .flash:hover{
@@ -373,10 +375,10 @@ a{
 }
 @media (max-width: 600px){
     .b0,.b1,.b2,.b3,.b4,.b5{
-        height: 70vh;
+        height: 80vh;
     }
     .main{
-        top:70vh ;
+        top:80vh ;
     }
     .flashcard{
         flex-direction: column;
@@ -396,13 +398,59 @@ a{
     }
     .f-img{
         height:50vw ;
-        width: 40vw;
+        width: 50vw;
     }
     .flash{
-        padding-top: 2vw;
-        padding-bottom: 2vw;
+        padding-top: 4vw;
+        padding-bottom: 2vw
+        
     }
     .button{
         font-size: 5vw;
     }
+    .msg{
+        width:80vw;
+        height: 25vh;
+    }
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav, .social-media {
+    margin: 10px 0;
+}
+
+.footer-nav a, .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover, .social-media a:hover {
+    color: #1e90ff; /* Change to your preferred hover color */
+}
+
+.copyright {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
 }
