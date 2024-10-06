@@ -173,6 +173,7 @@ body{
 .projects{
     display: block;
     padding-top: 10vh;
+    padding-bottom: 10vh;
     
     width: 100%;
     color: #fff;
@@ -375,13 +376,13 @@ a{
 }
 @media (max-width: 600px){
     .b0,.b1,.b2,.b3,.b4,.b5{
-        height: 80vh;
+        height: 70vh;
     }
     .main{
-        top:80vh ;
+        top:70vh ;
     }
     .flashcard{
-        flex-direction: column;
+        flex-direction:column;
         gap: 10vw;
     }
     .p-head,.skill-head{
@@ -411,6 +412,25 @@ a{
     .msg{
         width:80vw;
         height: 25vh;
+    }
+    .about-text{
+        flex-direction: column-reverse;
+    }
+    .skill-body{
+        font-size: 3.5vw;
+        width: 66.15vw;
+    }
+    .name{
+        font-size: 4.5vw;
+    }
+    .skill-bar{
+        font-size:3.3vw ;
+    }
+    .c-body{
+        font-size: 3vw;
+    }
+    .me{
+        width:30vw;
     }
 }
 footer {
