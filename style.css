@@ -71,7 +71,7 @@ body{
     top: 20vh;
     left: 50%;
     transform: translateX(-50%);
-    color: bisque;
+    color: rgb(255, 226, 190);
     z-index: -1;
     text-align: center;
     width:max-content;
