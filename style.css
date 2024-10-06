@@ -68,7 +68,7 @@ body{
 }
 .header-container{
     position: fixed; 
-    top: 25vh;
+    top: 20vh;
     left: 50%;
     transform: translateX(-50%);
     color: bisque;
@@ -432,6 +432,7 @@ a{
     .me{
         width:30vw;
     }
+    
 }
 footer {
     background-color: #333;
